@@ -15,3 +15,7 @@ git config --global delta.navigate "true"
 git config --global merge.conflictstyle "diff3"
 git config --global diff.colorMoved "default"
 
+if command -v nvim &> /dev/null
+then
+	git config --global core.editor nvim
+fi
