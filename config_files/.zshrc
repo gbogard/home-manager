@@ -75,6 +75,10 @@ plugins=(
   node 
   npm
   zsh-autosuggestions
+  kubectl
+  ansible
+  docker
+  docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
