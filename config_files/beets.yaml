@@ -1,0 +1,28 @@
+plugins: convert lyrics fetchart embedart
+
+directory: /Volumes/guillaume/Musique/bib
+library: /Volumes/guillaume/Musique/beets.db
+ui:
+  color: yes
+
+paths:
+    default: $albumartist/$album/$track $title
+    singleton: Singletons/$artist - $title
+
+import:
+  write: yes
+  move: yes
+
+fetchart:
+  auto: yes
+
+embedart:
+  auto: yes
+
+lyrics:
+  auto: yes
+
+convert:
+  dest: /Volumes/guillaume/Musique/converted
+  never_convert_lossy_files: yes
+  format: ogg
