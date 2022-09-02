@@ -81,6 +81,13 @@ then
   $COMMON_SCRIPTS_DIR/rust.sh
 fi
 
+read -p "Would you like to install and configure Pyenv ? (Reply with Y/y)" -n 1 -r
+echo    
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+  $COMMON_SCRIPTS_DIR/python.sh
+fi
+
 read -p "Would you like to install and configure Beets (music manager) ? (Reply with Y/y)" -n 1 -r
 echo    
 if [[ $REPLY =~ ^[Yy]$ ]]
